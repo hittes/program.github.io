@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="program">
+            <div class="expression">
+                <div class="expression_container">
+                    <span class="expression-operand-a" id="expression-operand-a"></span>
+                    <span class="expression-operation">+</span>
+                    <span class="expression-operand-b" id="expression-operand-b"></span>
+                    <span class="expression-equals"> = </span>
+                    <div class="expression-solution_container">
+                        <span class="expression-solution-completed" id="expression-solution-completed">?</span>
+                        <input class="expression-solution invisible" id="expression-solution" type="text" maxlength="2" oninput="solutionChanged(this)">
+                    </div>
+
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="arrows-road" id="arrows-road">
+                    <div class="arrow-element-a" id="arrow-element-a">
+                        <input class="arrow-value-a" id="arrow-value-a" type="text" maxlength="1" oninput="operandChanged(this)">
+                        <span class="arrow-value-completed-a invisible" id="arrow-value-completed-a"></span>
+                        <canvas class="arrow" id="arrow-a"></canvas>
+                    </div>
+                    <div class="arrow-element-b invisible" id="arrow-element-b">
+                        <input class="arrow-value-b" id="arrow-value-b" type="text" maxlength="1" oninput="operandChanged(this)">
+                        <span class="arrow-value-completed-b invisible" id="arrow-value-completed-b"></span>
+                        <canvas class="arrow" id="arrow-b"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="axis"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    outline: none;
+}
+
+.program {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 875px;
+}
+
+.invisible {
+    display: none !important;
+}
+
+.axis {
+    background-image: url("images/sprite.png");
+    background-repeat: no-repeat;
+    height: 83px;
+}
+
+.expression {
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+}
+
+.expression_container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.expression-operand-a,
+.expression-operation,
+.expression-operand-b,
+.expression-equals,
+.expression-solution,
+.expression-solution-completed {
+    font-size: 26px;
+    font-family: "Arial";
+}
+
+.expression-solution_container {
+    display: inline-block;
+}
+
+.expression-solution {
+    width: 36px;
+    text-align: center;
+}
+
+.arrows {
+    padding-left: 33px;
+    padding-right: 58px;
+}
+
+.arrows-road {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.arrow-element {
+    width: 100px;
+}
+
+.arrow-value-a,
+.arrow-value-b,
+.arrow-value-completed-a,
+.arrow-value-completed-b {
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Arial";
+    padding: 2px;
+}
+
+.arrow-value-completed-a,
+.arrow-value-completed-b {
+    margin-bottom: 0;
+    padding-bottom: 11px;
+}
+
+.arrow {
+    height: 50px;
+}
